@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>ScoreKeeper</title>
+    
+</head>
+<body>
+    <section class="scoreKeeper section">
+        <div class="container " >
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <header>
+                            <div class="card-image">
+                                 <img src="badminton.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                              <h1 class="title is-4">Badminton Score Keeper</h1>
+                              <label class="subtitle is-5" for="bestOf">Best Of:</label>
+                              <div class="select is-rounded is-small mr-5 ml-2">
+                                    <select name="bestOf" id="bestOf">
+                                        <option value="1">1</option>
+                                        <option value="3">3</option>
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
+                                        <option value="9">9</option>
+                                        <option value="11">11</option>
+                                    </select>
+                              </div>
+                              <label class="subtitle is-5" for="playTo">Play Till:</label>
+                              <div class="select is-rounded is-small ml-2">
+                                    <select name="playTo" id="playTo">
+                                        <option value="5">5</option>
+                                        <option value="7">7</option>
+                                        <option value="11">11</option>
+                                        <option value="15">15</option>
+                                        <option value="21">21</option>
+                                        <option value="30">30</option>
+                                    </select>
+                              </div>
+                          </div>
+                        </header>
+                        <div id="matchHolder" class="columns is-gapless is-multiline ">
+                            <div class="match card column is-4">
+                                 <div class="card-content">
+                                     <h1 class="title is-2"><span class="playerdisplay1">0</span> to <span class="playerdisplay2">0</span></h1>
+                                 </div>
+                            </div>     
+
+                        
+                        </div>                 
+                        <div class="card-footer">
+                            <button id="player1add" class="card-footer-item button is-large is-primary">+1 Player 1</button>
+                            <button id="player2add" class="card-footer-item button is-large is-info">+1 Player 2 </button>
+                            <button id="reset" class="card-footer-item button is-large is-danger">Reset</button>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <script src="ap.js"></script>
+    
+
+
+</body>
+</html>
